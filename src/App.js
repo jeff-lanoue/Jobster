@@ -1,4 +1,23 @@
-import Landing from "./pages/Landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Landing, Error, Dashboard, Register } from "./pages";
+
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="landing" element={<Landing />} />
+                <Route path="register" element={<Register />} />
+                <Route path="*" element={<Error />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+/* 
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31846052#overview
+*/
+
 /* 
 import styled from "styled-components";
 // How to use styled components
@@ -12,20 +31,15 @@ const SecondBuitton = styled.button`
     color: yellow;
     font-size: 2rem;
 `; 
-*/
 
 function App() {
     return (
         <div>
-            {/*
             <Buitton>Click Me</Buitton>
             <SecondBuitton>Click Me</SecondBuitton> 
-            */}
             <Landing />
-
-            {/* https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31846016#overview */}
         </div>
     );
 }
-
+*/
 export default App;
