@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Landing, Error, Dashboard, Register } from "./pages";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -10,13 +12,14 @@ function App() {
                 <Route path="register" element={<Register />} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <ToastContainer position="top-center" />
         </BrowserRouter>
     );
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31850036#overview
-442 #### 21) React Toastify 
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31859378#overview
+671 ###27) Register User
 */
 
 /* 

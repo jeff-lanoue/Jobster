@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Logo, FormRow } from "../components";
 import Wrapper from "../assets/wrappers/RegisterPage";
 // redux toolkit and useNavigate later
+import { toast } from "react-toastify";
+import { useSelector, useDispatch } from "react-redux";
+import { loginUser, registerUser } from "../features/user/userSlice";
 
 const initialState = {
     name: "",
@@ -12,7 +15,8 @@ const initialState = {
 
 function Register() {
     const [values, setValues] = useState(initialState);
-
+    const { user, isLoading } = useSelector((store) => store.user);
+    const dispatch = useDispatch();
     // redux toolkit and useNavigate later
 
     const handleChange = (e) => {
@@ -26,9 +30,14 @@ function Register() {
         e.preventDefault();
         const { name, email, password, isMember } = values;
         if (!email || !password || (!isMember && !name)) {
-            console.log("Please Fill Out All Fields");
+            toast.error("Please Fill Out All Fields");
             return;
         }
+        if (isMember) {
+            dispatch(loginUser({ email: email, password: password }));
+            return;
+        }
+        dispatch(registerUser({ name, email, password }));
     };
 
     const toggleMember = () => {
