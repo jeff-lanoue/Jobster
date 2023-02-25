@@ -17,7 +17,7 @@ const initialState = {
 function Register() {
     const [values, setValues] = useState(initialState);
     const { user, isLoading } = useSelector((store) => store.user);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); // usdDispatch is used for connectiong to slices
     // redux toolkit and useNavigate later
     const navigate = useNavigate();
 

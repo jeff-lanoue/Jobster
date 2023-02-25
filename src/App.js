@@ -30,8 +30,8 @@ function App() {
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31859602#overview
-900 #### 32) Navbar, SmallSidebar, BigSidebar
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31862732#overview
+1083 #### 38) Logout User
 */
 
 /* 
