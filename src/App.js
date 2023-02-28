@@ -37,8 +37,8 @@ function App() {
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31862732#overview
-1083 #### 38) Logout User
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31863308#overview
+1378 #### 46) Profile Page - Structure
 */
 
 /* 
