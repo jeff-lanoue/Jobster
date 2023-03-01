@@ -37,8 +37,8 @@ function App() {
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31863308#overview
-1378 #### 46) Profile Page - Structure
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31890438#overview
+1636 #### 50) Job Slice
 */
 
 /* 
