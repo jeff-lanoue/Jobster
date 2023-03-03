@@ -37,8 +37,8 @@ function App() {
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31890438#overview
-1636 #### 50) Job Slice
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31957702#overview
+1857 #### 53) User Slice - HandleChange Reducer
 */
 
 /* 
