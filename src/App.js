@@ -37,8 +37,8 @@ function App() {
 }
 
 /* 
-https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/31961576#overview
-#### 67) SetEditJob Reducer
+https://www.udemy.com/course/react-tutorial-and-projects-course/learn/lecture/32020996#overview
+#### 74) Get Stats Request
 */
 
 /* 

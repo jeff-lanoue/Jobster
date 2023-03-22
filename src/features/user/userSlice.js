@@ -42,6 +42,9 @@ export const updateUser = createAsyncThunk(
 
 // jeff@th***o****.xyz
 // Jobster123
+
+// email : testUser@test.com
+// password : secret
 const userSlice = createSlice({
     name: "user",
     initialState,
